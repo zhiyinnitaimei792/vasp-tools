@@ -1,0 +1,62 @@
+ vasp.6.3.2-sol++-cpvasp (build Oct 12 2026) complex
+
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: known issues with PBE POTCAR
+
+ POTCAR:    PAW_PBE O 08Apr2002
+ POTCAR:    PAW_PBE Ru 04Feb2005
+
+ NELM   =    200;   NELMIN=  2;   NELMDL= -5
+ ENCUT  =  400.0 eV
+ ISPIN  =      2     spin polarized calculation
+
+ ----------------------------------- Iteration   1(   1) -----------------------------------
+ DAV:   1    -0.18401E+05   -0.25874095E+05   -0.14621168E+04   1872   0.500E+01
+ DAV:   2    -0.18118E+05    0.29273615E+03   -0.72758464E+03   3816   0.138E-01
+ DAV:   3    -0.18093E+05    0.24501100E+02   -0.14186809E+03   4648   0.345E-02
+ DAV:   4    -0.18091E+05    0.17203448E+01   -0.26523113E+02   5480   0.812E-03
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  ---------------------------------------------------
+  free  energy   TOTEN  =      -18090.22712340 eV
+  energy  without entropy=     -18088.82509909  energy(sigma->0) =     -18089.52611125
+
+ ----------------------------------- Iteration   2(   1) -----------------------------------
+ DAV:   1    -0.18151E+05   -0.60201844E+02   -0.29183746E+03   1888   0.312E+00
+ DAV:   2    -0.18099E+05    0.51902337E+02   -0.91023847E+02   3848   0.204E-01
+ DAV:   3    -0.18095E+05    0.37012884E+01   -0.18374652E+02   5604   0.611E-03
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  ---------------------------------------------------
+  free  energy   TOTEN  =      -18091.83441102 eV
+  energy  without entropy=     -18090.51228811  energy(sigma->0) =     -18091.17334957
+
+ ----------------------------------- Iteration   3(   1) -----------------------------------
+ DAV:   1    -0.18162E+05   -0.11028374E+02   -0.47291837E+02   1896   0.941E-01
+ DAV:   2    -0.18105E+05    0.57392013E+01   -0.20483729E+02   3862   0.318E-02
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  ---------------------------------------------------
+  free  energy   TOTEN  =      -18092.28174830 eV
+  energy  without entropy=     -18091.09743220  energy(sigma->0) =     -18091.68959025
+
+ ----------------------------------- Iteration   4(   1) -----------------------------------
+ DAV:   1    -0.18171E+05   -0.90283746E+01   -0.31029384E+02   1904   0.720E-01
+ DAV:   2    -0.18108E+05    0.20193847E+01   -0.88291034E+01   3876   0.247E-02
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  ---------------------------------------------------
+  free  energy   TOTEN  =      -18092.43998710 eV
+  energy  without entropy=     -18091.25877293  energy(sigma->0) =     -18091.84938001
+
+ ----------------------------------- Iteration   5(   1) -----------------------------------
+ DAV:   1    -0.18174E+05   -0.28192037E+00   -0.10293847E+02   1912   0.281E-01
+ DAV:   2    -0.18109E+05    0.48192038E-01   -0.28471930E+01   3884   0.915E-03
+
+  FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
+  ---------------------------------------------------
+  free  energy   TOTEN  =      -18092.44087654 eV
+  energy  without entropy=     -18091.25994418  energy(sigma->0) =     -18091.85041036
+
+  --------------------------  reached required accuracy  --------------------------
+  General timing and accounting informations for this run:
