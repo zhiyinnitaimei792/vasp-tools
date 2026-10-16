@@ -19,7 +19,10 @@ venv/
 # 生成的文件 —— 跑一次就能重新出现的东西，一律不上传
 # 规律：凡是"由别的文件算出来的"结果，都往这里加
 energies.txt
-forces.png
+notconv.txt
+*_forces.png
+# 例外：README 里要显示的那张图必须进仓库，否则 GitHub 上是红叉
+!sample_OUTCAR.txt_forces.png
 
 # 从集群拉下来的算例数据 —— 不是我的数据，也不该由我发布
 OUTCAR
