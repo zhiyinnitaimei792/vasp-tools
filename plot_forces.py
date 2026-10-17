@@ -7,9 +7,9 @@ def get_forces(path):
     forces = []
     got_forces = False
     for i in range(len(lines)):
-        if "FORCES: max atom, RMS" in lines[i]:  # 跟抠能量同一个套路
+        if "FORCES: max atom, RMS" in lines[i]:  
             parts = lines[i].split()
-            forces.append(float(parts[-2]))  # 空1：最大力在第几个位置？
+            forces.append(float(parts[-2]))  
             got_forces = True
     return forces, got_forces
 
@@ -22,9 +22,9 @@ for path in sys.argv[1:]:
 
     if got_forces:
         plt.figure()  # ② 开一张新画布
-        plt.plot(range(1, len(forces) + 1), forces, marker="o", label="Max Force")  # 空2、空3：横轴？纵轴？
+        plt.plot(range(1, len(forces) + 1), forces, marker="o", label="Max Force")  
 
-        plt.axhline(0.05, color="red", linestyle="--", label="EDIFFG")  # ③ 见下面
+        plt.axhline(0.05, color="red", linestyle="--", label="EDIFFG")  
         plt.legend()
 
         plt.xlabel("ionic step")
