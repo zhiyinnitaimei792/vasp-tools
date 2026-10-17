@@ -1,25 +1,15 @@
 import sys
 import matplotlib.pyplot as plt
-
-def get_energies(path):
-    lines = open(path).readlines()
-    energies = []
-    got_energies = False
-    for i in range(len(lines)):
-        if "free  energy   TOTEN" in lines[i]:
-            parts = lines[i].split()
-            energies.append(float(parts[4])) 
-            got_energies = True
-    return energies, got_energies
+from outcar import read_outcar
 
 if len(sys.argv) < 2:
     print("用法: python plot_energies.py <OUTCAR 路径>")
     sys.exit()
 
 for path in sys.argv[1:]:
-    energies, got_energies = get_energies(path)
+    energies, forces, converged = read_outcar(path)
 
-    if got_energies:
+    if energies:
         ref = energies[-1]
         delta = []
         for e in energies:

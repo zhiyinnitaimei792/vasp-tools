@@ -1,26 +1,15 @@
 import sys
 import matplotlib.pyplot as plt  # ① 画图库
-
-
-def get_forces(path):
-    lines = open(path).readlines()
-    forces = []
-    got_forces = False
-    for i in range(len(lines)):
-        if "FORCES: max atom, RMS" in lines[i]:  
-            parts = lines[i].split()
-            forces.append(float(parts[-2]))  
-            got_forces = True
-    return forces, got_forces
+from outcar import read_outcar  # 从 outcar.py 中导入 read_outcar 函数
 
 if len(sys.argv) < 2:
     print("用法: python plot_forces.py <OUTCAR 路径>")
     sys.exit()
 
 for path in sys.argv[1:]:
-    forces, got_forces = get_forces(path)
+    energies, forces, converged = read_outcar(path)
 
-    if got_forces:
+    if forces:  # 如果找到了力值
         plt.figure()  # ② 开一张新画布
         plt.plot(range(1, len(forces) + 1), forces, marker="o", label="Max Force")  
 
