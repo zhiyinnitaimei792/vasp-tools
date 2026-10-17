@@ -20,8 +20,7 @@ venv/
 # 规律：凡是"由别的文件算出来的"结果，都往这里加
 energies.txt
 notconv.txt
-*_forces.png
-*_energies.png
+*.png
 # 例外：README 里要显示的那张图必须进仓库，否则 GitHub 上是红叉
 !sample_OUTCAR.txt_forces.png
 
